@@ -1,21 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-:focus{
-    outline: none;
-}
-
-select{
-    width: 50%;
+select {
     margin-bottom: 12px;
     padding: 2px 6px;
 }
-.container {
-    max-width: 1200px;
-    margin: auto;
-}
+
 
 .layout {
     position: fixed;
@@ -39,15 +26,18 @@ select{
     justify-content: center;
     align-items: center;
 }
+
 .contents {
     z-index: 1;
-    width: 100%;   
+    width: 100%;
     margin-top: 50px;
 }
-.content-header{
+
+.content-header {
     margin-bottom: 17px;
 }
-.content-header-left{
+
+.content-header-left {
     width: 30%;
     text-align: start;
 }
@@ -55,56 +45,77 @@ select{
 .content-header-left label {
     color: #fff;
 }
+
 .content-header-left form {
     display: flex;
     justify-content: space-evenly;
 }
+
 .content-header-left form select {
-    border-radius:5px ;
+    border-radius: 5px;
     padding: 6px 5px;
-    /* margin-bottom: 7px;
-    margin-left: 15px; */
+    width: 200px;
+    max-width: 200px;
 }
-.content-header-left img{
+
+.content-header-left img {
     width: 50px;
     background-color: rgb(73, 71, 71);
     border-radius: 50%;
 }
 
 .btn-show button {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    margin: 4px 2px;
     cursor: pointer;
-    border: 1px solid #9d9a9a;
     border-radius: 5px;
-    padding: 6px 5px;
+    text-align: right;
     margin-bottom: 20px;
     margin-left: 63%;
 }
-.content-bottom-item{
+
+.content-bottom-item {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .content-bottom-text {
     text-align: center;
 }
+
 .content-bottom-text img {
     width: 50px;
     background-color: rgb(73, 71, 71);
     border-radius: 50%;
 }
-.content-bottom-text h2,h4 {
-    color: #fff;
+
+.content-bottom-text h4 {
+    color: #ff2d2d;
+    font-size: 14px;
 }
+
 .content-bottom-text h2 {
-    font-size: 40px;
+    color: #fff;
+    font-size: 36px;
 }
-.content-bottom-item-under{
+
+.content-bottom-item-under {
     margin-top: 20px;
     font-size: 20px;
     color: #fff;
     text-align: center;
 }
-.footer{
+
+.content-bottom-item-under h1 {
+    color: #dbaf4b;
+}
+
+.footer {
     margin-top: 70px;
     font-size: 11px;
     color: #fff;
@@ -112,6 +123,7 @@ select{
     justify-content: center;
     align-items: center;
 }
-.footer p:first-child{
+
+.footer p:first-child {
     margin-right: 20px;
 }

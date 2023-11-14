@@ -4,25 +4,18 @@
      box-sizing: border-box;
  }
 
+ .banner {
+     height: 100% !important;
+ }
+
  h1 {
-     color: #fff;
+     color: #dbaf4b;
  }
 
  :focus {
      outline: none;
  }
 
- .container {
-     margin: auto;
-     max-width: 1200px;
- }
-
- .banner {
-     background-image: url(../logo/BR\ 01.png);
-     width: 100%;
-     height: 100vh;
-     background-size: cover;
- }
 
  .img-head {
      text-align: center;
@@ -43,7 +36,7 @@
      font-size: 1.12em;
  }
 
- .criteria input[type="text"] {
+ .textBox {
      width: 50px;
      font-size: 1em;
      width: 60px;
@@ -53,7 +46,7 @@
  }
 
  .tiengtrung {
-     color: red;
+     color: #ff2d2d;
  }
 
  .criteria:nth-child(odd) {
@@ -74,8 +67,8 @@
 
  .total-label {
      font-weight: bold;
-     font-size: 1.2em;
-     color: #2e2727;
+     font-size: 30px;
+     color: #dbaf4b;
  }
 
  .total-score {
@@ -106,7 +99,7 @@
  }
 
  .popup-content {
-     background-color: #fff;
+     background-color: #3498db;
      padding: 30px;
      border-radius: 5px;
      text-align: center;
@@ -114,25 +107,62 @@
 
  .popup-content h2,
  p {
+     color: #fff;
      margin-bottom: 15px;
+ }
+
+ .popup-content h2 {
+     color: #dbaf4b;
+     font-weight: 600;
  }
 
  .popup-buttons button {
      margin: 0 10px;
-     font-size: 1.2em;
+     font-size: 16px;
      padding: 5px 10px;
-     border-radius: 5px;
+     border-radius: 4px;
      border: 1px solid #393232;
+     cursor: pointer;
+     border: none;
+ }
+
+ .popup-buttons button:hover {
+     background-color: #e7e7e7;
+ }
+
+ .confirm-button-wrapper {
+     width: 100%;
+     padding-bottom: 12px;
+     text-align: center;
  }
 
  #confirm-button {
-     background-color: #04AA6D;
+     background-color: #3498db;
      border: none;
      color: white;
-     padding: 16px 32px;
+     padding: 12px 14px;
      text-decoration: none;
      margin: 4px 2px;
      cursor: pointer;
-     border-radius: 20px;
+     border-radius: 5px;
      text-align: right;
+
+ }
+
+ #confirm-button:hover {
+     background-color: #338ac5;
+ }
+
+ .layer {
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 10;
+     width: 100%;
+     background: black;
+     opacity: 0.5;
+     height: 100%;
+     overflow: hidden;
+     outline: 0;
+     transition: opacity 0.15s linear;
  }

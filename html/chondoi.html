@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chon đội</title>
     <link rel="stylesheet" href="/asset/css/chondoi.css">
+    <link rel="stylesheet" href="/asset/css/base.css">
 </head>
 
 <body>
@@ -19,9 +20,8 @@
                             <img src="/asset/logo/avt.png" alt="">
                             <div class="content-item-opt">
                                 <label for="">Trường</label>
-                                <select name="" id="">
-                                    <option value="">Chọn trường---</option>
-                                    <option value="">Tong Duc Thang University</option>
+                                <select name="" id="select-school">
+
                                 </select>
                             </div>
                             <div class="content-item-opt">
@@ -35,15 +35,16 @@
                                 <label for="">Thể loại</label>
                                 <select name="" id="kind" onchange="changeKind()">
                                     <option value="">Chọn Tiết mục---</option>
-                                    <option value="Ton Duc Thang">Ton Duc Thang University</option>
+                                    <option value="HatHatHatHatHatHatHatHatHatHatHatHatHatHatHatHatHatvv">
+                                        Haha University</option>
                                     <option value="Lac Hong">Lac Hong University</option>
                                 </select>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="content-text">
-                        <h2 >Trường: Lac Hong University</h2>
+                        <h2>Trường: Lac Hong University</h2>
                         <h2>Đội: Tiểu đội xe khong kinh</h2>
                         <h2 id="kind-text">Thể loại: Hát</h2>
                     </div>
@@ -62,19 +63,6 @@
         </div>
     </div>
 
-    <script>
-        const btnChoose = document.getElementById('btn-choose');
-        btnChoose.addEventListener('click', () =>{
-            window.location = 'http://127.0.0.1:5500/html/chamdiem2.html'
-        })  
-
-        const kindDropdown = document.getElementById('kind');
-        const kindText = document.getElementById('kind-text');
-
-        function changeKind() {
-        let selectedValue = kindDropdown.value;
-        kindText.textContent = `Thể loại: ${selectedValue}`;
-        }
-    </script>
+    <script src="/js/chonDoi.js"></script>
 </body>
 </htm

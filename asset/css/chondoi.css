@@ -1,17 +1,4 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-:focus{
-    outline: none;
-}
-.container{
-    max-width: 1200px;
-    margin: auto;
-}
-.banner{
+.banner {
     background-image: url(../logo/BR\ 3.png);
     width: 100%;
     height: 100vh;
@@ -20,7 +7,8 @@
     justify-content: center;
     align-items: center;
 }
-.layout{
+
+.layout {
     position: fixed;
     top: 0;
     left: 0;
@@ -32,48 +20,68 @@
     outline: 0;
     transition: opacity 0.15s linear;
 }
-.contents{
+
+.contents {
     z-index: 1;
 }
 
-.content-item >img{
+.content-item>img {
     width: 50px;
     background-color: rgb(73, 71, 71);
     border-radius: 50%;
 }
-.content-item-opt{
+
+.content-item-opt {
     text-align: center;
 }
-.content-item-opt >select{
+
+.content-item-opt>select {
+    width: 200px;
+    max-width: 200px;
     padding: 6px 4px;
     margin-bottom: 10px;
     border-radius: 5px;
     cursor: pointer;
 }
-.content-item-opt >label{
+
+
+.content-item-opt>label {
     color: #fff;
     margin-right: 15px;
     text-align: center;
 }
 
-.content-text{
+.content-text {
     margin: 15px 0;
 }
-.content-text >h2{
+
+.content-text>h2 {
     color: #fff;
-    margin-bottom:15px ;
+    margin-bottom: 15px;
     text-align: center;
 }
-.btn-select{
+
+.btn-select {
     text-align: center;
 }
-.btn-select > button{
-    padding: 6px 4px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+
+.btn-select>button {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 12px 14px;
+    text-decoration: none;
+    margin: 4px 2px;
     cursor: pointer;
+    border-radius: 5px;
+    text-align: right;
 }
-.footer{
+
+.btn-select>button:hover {
+    background-color: #338ac5;
+}
+
+.footer {
     margin-top: 70px;
     font-size: 11px;
     color: #fff;
@@ -81,6 +89,7 @@
     justify-content: center;
     align-items: center;
 }
-.footer p:first-child{
+
+.footer p:first-child {
     margin-right: 20px;
 }
