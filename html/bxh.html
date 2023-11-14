@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bxh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/asset/css/bxh.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <nav class="nav">
+                <img src="/asset/logo/16.png" alt="">
+            </nav>
+            <header>
+                <div class="header">
+                    <label for="">Thể loại(类别)</label>
+                    <select name="" id="">
+                        <option value="">Hát đơn ca</option>
+                    </select>
+                    <button>Xác nhận (提交)</button>
+                    <button id="back">Trở về (返回)</button>
+                </div>
+                <div class="center">
+                    <div class="center-top">
+                        <img src="/asset/logo/avt.png" alt="">
+                        <h3>Team(团队)</h3>
+                        <h3><i class="fa-solid fa-trophy"></i>Hạng 1</h3>
+                    </div>
+                    <div class="center-bottom">
+                        <div class="center-bottom-item-2">
+                            <img src="/asset/logo/avt.png" alt="">
+                            <h3>Team(团队)</h3>
+                            <h3><i class="fa-solid fa-medal"></i>Hạng 2</h3>
+                        </div>
+                        <div class="center-bottom-item-3">
+                            <img src="/asset/logo/avt.png" alt="">
+                            <h3>Team(团队)</h3>
+                            <h3><i class="fa-solid fa-medal"></i>Hạng 3</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <h2>Bảng xếp hạng<i class="fa-solid fa-ranking-star"></i></h2>
+                    <h2>图表<i class="fa-solid fa-ranking-star"></i></h2>
+                </div>
+            </header>
+            <div class="list">
+                <table>
+                    <tr>
+                        <th>Thứ Hạng</th>
+                        <th>Đội</th>
+                        <th>Điểm</th>
+                    </tr>
+                    <tr class="remain-place">
+                        <td>4</td>
+                        <td>Đội A</td>
+                        <td>30</td>
+                    </tr>
+                    <tr class="remain-place">
+                        <td>5</td>
+                        <td>Đội B</td>
+                        <td>25</td>
+                    </tr>
+                    <tr class="remain-place">
+                        <td>6</td>
+                        <td>Đội C</td>
+                        <td>20</td>
+                    </tr>
+                    <tr class="remain-place">
+                        <td>7</td>
+                        <td>Đại học Lạc Hồng</td>
+                        <td>18</td>
+                    </tr>
+                    <tr class="remain-place">
+                        <td>8</td>
+                        <td>Đại học Tôn Đức Thắng</td>
+                        <td>17</td>
+                    </tr>
+
+                </table>
+            </div>
+            <footer>
+                <div class="footer">
+                    <p>@Được thiết kế bởi khoa Công Nghệ Thông Tin</p>
+                    <p><i class="fa-solid fa-phone"></i> (+84)251 3 952 251</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('back').addEventListener('click', () => {
+            window.location = 'http://127.0.0.1:5500/html/thuki.html'
+        })
+    </script>
+</body>
+
+</html>

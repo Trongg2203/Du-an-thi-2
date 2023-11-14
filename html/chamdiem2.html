@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cham điểm 2</title>
+    <link rel="stylesheet" href="/asset/css/chamdiem2.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="banner">
+            <div class="container">
+                <div class="img-head">
+                    <img src="/asset/logo/16.png" alt="">
+                </div>
+                <h1>Tiêu chí thi</h1>
+                <div class="criteria">
+                    <span class="content">Tiêu chí 1 - Nội dung tiêu chí dài và sẽ được wrap xuống dòng <br>
+                        <span class="tiengtrung">该公司本身是一家非常成功的公司。他们应得什么样的仇恨和罪孽，有什么样的区别？</span></span>
+                    <span style="text-align: center;">Max Mark <br>10</span>
+
+                    <input class="textBox" type="text">
+                </div>
+
+                <div class="criteria">
+                    <span class="content">Tiêu chí 1 - Nội dung tiêu chí dài và sẽ được wrap xuống dòng <br>
+                        <span class="tiengtrung">该公司本身是一家非常成功的公司。他们应得什么样的仇恨和罪孽，有什么样的区别？</span></span>
+                    <span style="text-align: center;">Max Mark <br>10</span>
+
+                    <input class="textBox" type="text">
+                </div>
+
+                <div class="criteria">
+                    <span class="content">Tiêu chí 1 - Nội dung tiêu chí dài và sẽ được wrap xuống dòng <br>
+                        <span class="tiengtrung">该公司本身是一家非常成功的公司。他们应得什么样的仇恨和罪孽，有什么样的区别？</span></span>
+                    <span style="text-align: center;">Max Mark <br>10</span>
+
+                    <input class="textBox" type="text">
+                </div>
+
+                <div class="criteria">
+                    <span class="content">Tiêu chí 1 - Nội dung tiêu chí dài và sẽ được wrap xuống dòng <br>
+                        <span class="tiengtrung">该公司本身是一家非常成功的公司。他们应得什么样的仇恨和罪孽，有什么样的区别？</span></span>
+                    <span style="text-align: center;">Max Mark <br>10</span>
+
+                    <input class="textBox" type="text">
+                </div>
+
+                <div class="criteria">
+                    <span class="content">Tiêu chí 1 - Nội dung tiêu chí dài và sẽ được wrap xuống dòng <br>
+                        <span class="tiengtrung">该公司本身是一家非常成功的公司。他们应得什么样的仇恨和罪孽，有什么样的区别？</span></span>
+                    <span style="text-align: center;">Max Mark <br>10</span>
+
+                    <input class="textBox" type="text">
+                </div>
+
+                <div class="criteria">
+                    <span class="content">Tiêu chí 1 - Nội dung tiêu chí dài và sẽ được wrap xuống dòng <br>
+                        <span class="tiengtrung">该公司本身是一家非常成功的公司。他们应得什么样的仇恨和罪孽，有什么样的区别？</span></span>
+                    <span style="text-align: center;">Max Mark <br>10</span>
+
+                    <input class="textBox" type="text">
+                </div>
+
+                <div class="criteria">
+                    <span class="content">Tiêu chí 1 - Nội dung tiêu chí dài và sẽ được wrap xuống dòng <br>
+                        <span class="tiengtrung">该公司本身是一家非常成功的公司。他们应得什么样的仇恨和罪孽，有什么样的区别？</span></span>
+                    <span style="text-align: center;">Max Mark <br>10</span>
+
+                    <input class="textBox" type="text">
+                </div>
+
+
+                <div class="total-wrapper">
+                    <span class="total-label">Tổng điểm:</span>
+                    <span class="total-score">100</span>
+                </div>
+
+                <button id="confirm-button">Xác nhận điểm</button>
+
+                <div class="popup" id="popup">
+                    <div class="popup-content">
+                        <h2>Thông tin đội thi</h2>
+                        <p>Tổng số điểm: <span id="popup-total-score"></span></p>
+                        <div class="popup-buttons">
+                            <button id="accept-button">Chấp nhận</button>
+                            <button id="cancel-button">Hủy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Lấy danh sách các tiêu chí và ô điểm tương ứng
+        const criteriaElements = document.querySelectorAll('.criteria');
+        const scoreInputs = document.querySelectorAll('.textBox');
+
+        // Tính tổng điểm khi có sự thay đổi trong ô điểm
+        const calculateTotalScore = () => {
+            let totalScore = 0;
+            scoreInputs.forEach((input) => {
+                totalScore += parseInt(input.value) || 0;
+            });
+            document.querySelector('.total-score').textContent = totalScore;
+        };
+
+        // Gán sự kiện thay đổi vào các ô điểm
+        scoreInputs.forEach((input) => {
+            input.addEventListener('change', calculateTotalScore);
+        });
+
+        // Hiển thị popup khi nhấp vào nút xác nhận điểm
+        const confirmButton = document.getElementById('confirm-button');
+        const popup = document.getElementById('popup');
+        const popupTotalScore = document.getElementById('popup-total-score');
+
+        confirmButton.addEventListener('click', () => {
+            popupTotalScore.textContent = document.querySelector('.total-score').textContent;
+            popup.classList.add('active');
+        });
+
+        // Đóng popup và quay lại trang chấm điểm khi nhấp vào nút hủy
+        const cancelButton = document.getElementById('cancel-button');
+
+        cancelButton.addEventListener('click', () => {
+            popup.classList.remove('active');
+        });
+
+        // Gửi điểm khi nhấp vào nút chấp nhận (chức năng này cần được cài đặt)
+        const acceptButton = document.getElementById('accept-button');
+
+        acceptButton.addEventListener('click', () => {
+            // Gửi điểm đi
+            alert("Thành công, nhấn oke để tiếp tục")
+            // Sau khi gửi điểm, bạn có thể thực hiện các hành động khác, ví dụ như làm mới trang
+            window.location = 'http://127.0.0.1:5500/html/chondoi.html'
+        });
+    </script>
+</body>
+
+</html>
